@@ -1,6 +1,3 @@
-package models;
-
-import java.util.SplittableRandom;
 
 public class Hero {
     private String name;
