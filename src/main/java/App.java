@@ -11,9 +11,9 @@ public class App {
         staticFileLocation("/public");
 
         //get: show new post form
-        get("/posts/new", (req, res) -> {
+        get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            return new ModelAndView(model, "post-form.hbs");
+            return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
     }
 }

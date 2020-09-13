@@ -5,11 +5,12 @@ import java.util.Map;
 public class Squads {
     private String name;
     private String cause;
-    ArrayList<Object> members = new ArrayList<>();
+    ArrayList<Object> members = new ArrayList<>(); //can essentially add squad members
 
-    public Squads(){
-        this.name = "Suicide Squad";
-        this.cause = "Fight Racism";
+    public Squads(String name, String cause){
+        this.name = name;
+        this.cause = cause;
+        members.add(this);
 
     }
 
