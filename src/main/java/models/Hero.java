@@ -15,9 +15,6 @@ public class Hero {
         this.weakness = weakness;
     }
 
-    public static void main(String[] args){
-
-    }
 
 
 }
