@@ -1,16 +1,24 @@
 {{#partial "start"}}
     <div class="row">
+        <h3 class="text-center">YOUR SQUADS !!</h3>
         {{#if "squads"}}
         <div class="col-4">
             {{#each squads}}
-                <ul>
-                    <li>Name: {{name}}</li>
-                    <li>Cause: {{cause}}</li>
-                    <li>Size: {{size}}</li>
-                </ul>
+                <div class="card">
+                   <div class="card-title">
+                       <h4>Name: {{name}}</h4>
+                   </div>
+                    <div class="card-body">
+                        <li>Cause: {{cause}}</li>
+                        <li>Size: {{size}}</li>
+                    </div>
+                </div>
             {{/each}}
         </div>
         {{/if}}
+        <div class="section">
+            <a class="btn btn-success" href="/form">ADD SQUAD</a>
+        </div>
     </div>
 
 {{/partial}}

@@ -1,14 +1,19 @@
 {{#partial "start"}}
-    <div class="row">
-        {{#each Heroes}}
-            <div class="container">
-                {{@first}}
-                {{name}}
-                {{specialPowers}}
-                {{weakness}}
-            </div>
-        {{/each}}
-
+    <div class="row" style="background-image: url('images/cropped-1366-768-1059617.jpg'); background-size:cover; background-repeat:no-repeat;">
+        <div class="col-8">
+            {{#each addedH }}
+                <div class="card">
+                    <div class="card-title">
+                        <h3 class="text-dark">NAME: {{name}}</h3>
+                        <div class="card-body">
+                            <p>AGE: {{age}}</p>
+                            <p>POWER: {{specialPower}}</p>
+                            <p>WEAKNESS: {{weakness}}</p>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
     </div>
 {{/partial}}
 

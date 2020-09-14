@@ -1,3 +1,5 @@
+import sun.awt.X11.XErrorEvent;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,10 +31,13 @@ public class Squads {
         return size;
     }
 
-    public void add(Hero hero){
+    public static void add(Hero hero){
         members.add(hero);
     }
 
+    public static boolean checkHeroInSquad(Hero hero){
+        return members.contains(hero);
+    }
 
 
     public static List<Object> getMembers(){

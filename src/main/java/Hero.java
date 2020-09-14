@@ -40,13 +40,13 @@ public class Hero {
         return hInstances;
     }
 
-    public static Hero addedHeroes(){
+    public static List<Hero> addedHeroes(){
         Hero heroes = new Hero("Vilgax", 23,"Alien Intelligence and Immortality","Ben !0");
         Hero second = new Hero("Alien X", 989827, "Infinite Existance and time manipulation","Unknown");
         Hero vintage = new Hero("Cameo", 398729728,"Master god","mistress god");
         hInstances.add(heroes);
         hInstances.add(second);
         hInstances.add(vintage);
-        return  hInstances;
+        return hInstances;
     }
 }
