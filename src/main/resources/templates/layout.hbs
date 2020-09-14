@@ -22,10 +22,15 @@
         justify-content:center;
         }
 
+        .form-control::-webkit-input-placeholder {
+         color: white;
+          }
+        .form-control{
+            background-color: rgba(255, 255, 255, 0) !important;
+            color: white !important;
+            border: thin solid white;
+        }
         #first{
-        background-image: url('images/Avengers.jpg');
-        background-size:cover;
-        background-repeat:no-repeat;
         height: 300px;
         width:100%;
         }
@@ -56,7 +61,7 @@
                             <a class="nav-link"href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"href="#">Squads</a>
+                            <a class="nav-link"href="/newform">Squads</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"href="/form">Add Hero</a>

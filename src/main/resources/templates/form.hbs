@@ -1,20 +1,22 @@
 {{#partial "start"}}
-    <form action="/newhero" method="post">
-        <h1>Add a hero to Squad</h1>
+    <body id="formation" style="background-image: url('images/878752.jpg');background-size:cover;background-repeat:no-repeat;">
+    <form action="/success" method="post">
+        <h1 class="text-white">CHOOSE YOUR SQUAD</h1>
         <div class="form-group">
-            <label for="name">Enter Squad's Name</label>
+            <label for="name" class="text-white">Enter Squad's Name</label>
             <input type="text" class="form-control" id="name" name="name">
         </div>
         <div class="form-group">
-            <label for="age">Enter Squad's Size</label>
+            <label for="age" class="text-white">Enter Squad's Size</label>
             <input type="text" class="form-control" id="size" name="size">
         </div>
         <div class="form-group">
-            <label for="powers">Enter Squad's Cause</label>
-            <input type="text" class="form-control" id="cause" name="cause">
+            <label for="powers" class="text-white">Enter Squad's Cause</label>
+            <textarea rows="3" class="form-control" id="cause" name="cause"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    </body>
 {{/partial}}
 
 {{> layout.hbs}}

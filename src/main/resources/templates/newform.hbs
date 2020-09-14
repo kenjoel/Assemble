@@ -1,0 +1,18 @@
+{{#partial "start"}}
+    <div class="row">
+        {{#if "squads"}}
+        <div class="col-4">
+            {{#each "squads"}}
+                <ul>
+                    <li>Name: {{squads.getName}}</li>
+                    <li>Cause: {{squads.getCause}}</li>
+                    <li>Size: {{squads.getSize}}</li>
+                </ul>
+            {{/each}}
+        </div>
+        {{/if}}
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}

@@ -26,7 +26,7 @@ public class App {
 
 
         //post route after its created
-        post("/newhero", (request, response) -> {
+        post("/success", (request, response) -> {
             String name = request.queryParams("name");
             int size = Integer.parseInt(request.queryParams("size"));
             String cause = request.queryParams("cause");
@@ -36,6 +36,12 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             model.put("squad", squad);
             return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/newform", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("squads", Squads.getMembers());
+            return new ModelAndView(model, "newform.hbs");
         }, new HandlebarsTemplateEngine());
     }
 }
