@@ -10,8 +10,6 @@ public class Squads {
     public Squads(String name, String cause){
         this.name = name;
         this.cause = cause;
-        members.add(this);
-
     }
 
 

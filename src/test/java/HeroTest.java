@@ -11,7 +11,7 @@ public class HeroTest {
 
     @Test
     public void checkValues(){
-        Squads squads = new Squads();
+        Squads squads = new Squads("","");
         Hero hero = new Hero("Batman", 40,"Wealthy","Brokenness");
         squads.members.add(hero);
         assertEquals(1, squads.members.size());
