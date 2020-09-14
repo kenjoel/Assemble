@@ -1,18 +1,19 @@
 {{#partial "start"}}
-    <h1>Hero Squads</h1>
     <div class="row">
         <div class="col">
-            <div class="jumbotron">
-                <h1>WELCOME TO HERO SQUAD</h1>
-                <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 animated wobble"><strong>Hero Squad <i class="fas fa-mask animated rotateIn infinite"></i></strong></h1>
+            <div class="jumbotron" style="background-image:url('images/Avengers2.jpg'); background-size:cover;background-repeat:no-repeat; height:350px;">
+
+                <h1 class="text-dark text-center">WELCOME TO HERO SQUAD</h1>
+                <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 animated wobble"><i class="fas fa-mask animated rotateIn infinite"></i></strong></h1>
                 <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
             </div>
-            <div class="container">
-                <h2 class="text-dark">CREATE YOUR SQUAD</h2>
+            <div class="container" id="first">
+                <h2 class="text-white text-center">CREATE YOUR SQUAD</h2>
+                <button class="btn btn-warning" onclick="/form">Create Squad</button>
+                <button class="btn btn-warning" onclick="/form">View Squad</button>
             </div>
         </div>
     </div>
-
 
 {{/partial}}
 

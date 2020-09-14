@@ -1,83 +1,19 @@
 {{#partial "start"}}
-    <h1>Hero Squads</h1>
     <div class="row">
-        <div class="col-4">
-            {{#if Heros}}
-                <div class="card">
-                    <h2 class="card-title">Hero1</h2>
-                    <img class="img-top" src='images/luca-iaconelli-_L-CdtbsD-k-unsplash (copy).jpg' alt='A photo of a mountain.'/>
-                    <div class="card-body">
-                        <p>Name: {{Name}}</p>
-                        <p>Age:{{ Age}}</p>
-                        <p>Superpower: {{Heros.getSuperpower}}</p>
-                        <p>Weakness: {{Heros.getWeakness}}</p>
-                    </div>
-                </div>
-            {{/if}}
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <h2 class="card-title">Hero2</h2>
-                <img class="img-top"  src='images/b33e798e904ead20591ff5d27f10f7aa (copy).jpg' alt='A photo of a mountain.'/>
-                <div class="card-body">
-                    <p>Name:</p>
-                    <p>Age</p>
-                    <p>Superpower</p>
-                    <p>Weakness</p>
-                </div>
+        <div class="col">
+            <div class="jumbotron" style="background-image:url('images/Avengers2.jpg'); background-size:cover;background-repeat:no-repeat; height:350px;">
+
+                <h1 class="text-dark text-center">WELCOME TO HERO SQUAD</h1>
+                <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 animated wobble"><i class="fas fa-mask animated rotateIn infinite"></i></strong></h1>
+                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
             </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <h2 class="card-title">Hero3</h2>
-                <img class="img-top"  src='images/erik-mclean-8h__hh3Yw8c-unsplash.jpg' alt='A photo of a mountain.'/>
-                <div class="card-body">
-                    <p>Name</p>
-                    <p>Age</p>
-                    <p>Superpower</p>
-                    <p>Weakness</p>
-                </div>
+            <div class="container" id="first">
+                <h2 class="text-white text-center">CREATE YOUR SQUAD</h2>
+                <button class="btn btn-warning" onclick="/form">Create Squad</button>
+                <button class="btn btn-warning" onclick="/form">View Squad</button>
             </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <h2 class="card-title">Hero4</h2>
-                <img class="img-top"  src='images/a474050b9d22da2fe20684ce00367c54.png'alt='A photo of a mountain.'/>
-                <div class="card-body">
-                    <p>Name</p>
-                    <p>Age</p>
-                    <p>Superpower</p>
-                    <p>Weakness</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <h2 class="card-title">Hero5</h2>
-                <img class="img-top"  src='images/bc029427beba822644c0d78f5a18823f (copy).jpg' alt='A photo of a mountain.'/>
-                <div class="card-body">
-                    <p>Name</p>
-                    <p>Age</p>
-                    <p>Superpower</p>
-                    <p>Weakness</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <h2 class="card-title">Hero6</h2>
-                <img class="img-top"  src='images/janko-ferlic-Y0QG7GBHBLE-unsplash.jpg' alt='A photo of a mountain.'/>
-                <div class="card-body">
-                    <p>Name</p>
-                    <p>Age</p>
-                    <p>Superpower</p>
-                    <p>Weakness</p>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
-
 
 {{/partial}}
 
