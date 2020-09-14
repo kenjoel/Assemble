@@ -1,6 +1,6 @@
-App.java
- App
 Hero.java
  Hero
+App.java
+ App
 Squads.java
  Squads

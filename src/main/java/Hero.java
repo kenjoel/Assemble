@@ -1,11 +1,13 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Hero {
     private String name;
     private int age;
     private String specialPower;
     private String weakness;
-    private static ArrayList<Hero> hInstances = new ArrayList<>();
+    private static List<Hero> hInstances = new ArrayList<>();
+    private int size;
 
     public Hero(String name, int age, String specialPower, String weakness) {
         this.name = name;
@@ -13,6 +15,7 @@ public class Hero {
         this.specialPower = specialPower;
         this.weakness = weakness;
         hInstances.add(this);
+        size = hInstances.size();
 
     }
 
@@ -32,7 +35,7 @@ public class Hero {
         return weakness;
     }
 
-    public static ArrayList<Hero> getAll() {
+    public static List<Hero> getAll() {
         return hInstances;
     }
 }

@@ -11,10 +11,10 @@ public class HeroTest {
 
     @Test
     public void checkValues(){
-        Squads squads = new Squads("","");
+        Squads squads = new Squads("","",4);
         Hero hero = new Hero("Batman", 40,"Wealthy","Brokenness");
-        squads.members.add(hero);
-        assertEquals(1, squads.members.size());
+        squads.add(hero);
+        assertEquals(1, squads.getMembers().size());
     }
 
     @Test
@@ -22,5 +22,6 @@ public class HeroTest {
         Hero peter = new Hero("Vilgax", 22, "Heat Waves", "Water");
         assertTrue(Hero.getAll().contains(peter));
     }
+
 
 }
