@@ -17,4 +17,10 @@ public class HeroTest {
         assertEquals(1, squads.members.size());
     }
 
+    @Test
+    public void methodTest(){
+        Hero peter = new Hero("Vilgax", 22, "Heat Waves", "Water");
+        assertTrue(Hero.getAll().contains(peter));
+    }
+
 }
