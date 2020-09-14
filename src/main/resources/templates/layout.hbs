@@ -27,19 +27,29 @@
         background-size:cover;
         background-repeat:no-repeat;
         height: 300px;
+        width:100%;
         }
 
-        button{
-        position:relative;
+        .btn{
         margin-top:100px;
-        margin-left:200px;
+        padding:15px;
+        }
+
+        .nav-link{
+        color:#fff;
+        }
+        .navlink:onhover{
+        background-color:magenta;
+        }
+
+        .jumbotron{
+        width:100%;
         }
     </style>
 {{/block}}
 
 {{#block "nav"}}
 
-            <div class="container">
                 <nav class="navbar justify-content-center bg-dark">
                     <ul class="nav">
                         <li class="nav-item">
@@ -53,7 +63,6 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
 {{/block}}
 
 <!-- begin inner template-->
