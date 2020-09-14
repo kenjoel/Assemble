@@ -2,18 +2,18 @@
     <h1>Hero Squads</h1>
     <div class="row">
         <div class="col-4">
-            {{#for "Heros"}}
+            {{#if Heros}}
                 <div class="card">
                     <h2 class="card-title">Hero1</h2>
                     <img class="img-top" src='images/luca-iaconelli-_L-CdtbsD-k-unsplash (copy).jpg' alt='A photo of a mountain.'/>
                     <div class="card-body">
-                        <p>Name: {{Heros.getName}}</p>
-                        <p>Age:{{Heros.getAge}}</p>
+                        <p>Name: {{Name}}</p>
+                        <p>Age:{{ Age}}</p>
                         <p>Superpower: {{Heros.getSuperpower}}</p>
                         <p>Weakness: {{Heros.getWeakness}}</p>
                     </div>
                 </div>
-            {{/for}}
+            {{/if}}
         </div>
         <div class="col-4">
             <div class="card">
