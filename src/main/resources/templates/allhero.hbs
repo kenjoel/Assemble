@@ -1,0 +1,15 @@
+{{#partial "start"}}
+    <div class="row">
+        {{#each Heroes}}
+            <div class="container">
+                {{@first}}
+                {{name}}
+                {{specialPowers}}
+                {{weakness}}
+            </div>
+        {{/each}}
+
+    </div>
+{{/partial}}
+
+{{>layout.hbs}}

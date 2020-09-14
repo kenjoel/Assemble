@@ -25,6 +25,13 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
+        get("/heroes", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("Heroes", Hero.addedHeroes());
+            return new ModelAndView(model, "allhero.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
         //post route after its created
         post("/success", (request, response) -> {
             String name = request.queryParams("name");
@@ -37,6 +44,8 @@ public class App {
             model.put("squad", squad);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
+
+
 
         get("/newform", (request, response) -> {
             Map<String, Object> model = new HashMap<>();

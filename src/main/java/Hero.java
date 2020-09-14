@@ -9,6 +9,7 @@ public class Hero {
     private static List<Hero> hInstances = new ArrayList<>();
     private int size;
 
+
     public Hero(String name, int age, String specialPower, String weakness) {
         this.name = name;
         this.age = age;
@@ -37,5 +38,15 @@ public class Hero {
 
     public static List<Hero> getAll() {
         return hInstances;
+    }
+
+    public static Hero addedHeroes(){
+        Hero heroes = new Hero("Vilgax", 23,"Alien Intelligence and Immortality","Ben !0");
+        Hero second = new Hero("Alien X", 989827, "Infinite Existance and time manipulation","Unknown");
+        Hero vintage = new Hero("Cameo", 398729728,"Master god","mistress god");
+        hInstances.add(heroes);
+        hInstances.add(second);
+        hInstances.add(vintage);
+        return  hInstances;
     }
 }
