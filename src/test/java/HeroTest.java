@@ -17,7 +17,7 @@ public class HeroTest {
         Squads squads = new Squads("","",4);
         Hero hero = new Hero("Batman", 40,"Wealthy","Brokenness");
         squads.add(hero);
-        assertEquals(4, Squads.getMembers().size());
+        assertEquals(2, Squads.getMembers().size());
     }
 
     @Test
@@ -36,7 +36,7 @@ public class HeroTest {
     @Test
     public void addedHeroesTest(){
         List hello = Hero.addedHeroes();
-        assertEquals(7, hello.size());
+        assertEquals(6, hello.size());
     }
 
 
