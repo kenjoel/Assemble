@@ -1,4 +1,7 @@
 import org.junit.*;
+
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class HeroTest {
@@ -14,13 +17,26 @@ public class HeroTest {
         Squads squads = new Squads("","",4);
         Hero hero = new Hero("Batman", 40,"Wealthy","Brokenness");
         squads.add(hero);
-        assertEquals(1, squads.getMembers().size());
+        assertEquals(2, Squads.getMembers().size());
     }
 
     @Test
     public void methodTest(){
         Hero peter = new Hero("Vilgax", 22, "Heat Waves", "Water");
         assertTrue(Hero.getAll().contains(peter));
+    }
+
+    @Test
+    public void testExistingHero(){
+        Hero oneH = new Hero("virgo",2,"","");
+        Squads.add(oneH);
+        assertTrue(Squads.checkHeroInSquad(oneH));
+    }
+
+    @Test
+    public void addedHeroesTest(){
+        List hello = Hero.addedHeroes();
+        assertEquals(6, hello.size());
     }
 
 

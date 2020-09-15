@@ -4,15 +4,15 @@
         <h1 class="text-white">CHOOSE YOUR SQUAD</h1>
         <div class="form-group">
             <label for="name" class="text-white">Enter Squad's Name</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <input type="text" class="form-control" id="name" name="name" required>
         </div>
         <div class="form-group">
             <label for="age" class="text-white">Enter Squad's Size</label>
-            <input type="text" class="form-control" id="size" name="size">
+            <input type="number" class="form-control" id="size" name="size" required>
         </div>
         <div class="form-group">
             <label for="powers" class="text-white">Enter Squad's Cause</label>
-            <textarea rows="3" class="form-control" id="cause" name="cause"></textarea>
+            <textarea rows="3" class="form-control" id="cause" name="cause" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

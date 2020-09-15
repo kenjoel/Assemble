@@ -1,0 +1,20 @@
+{{#partial "start"}}
+    <div class="row" style="background-image: url('images/cropped-1366-768-1059617.jpg'); background-size:cover; background-repeat:no-repeat;">
+        <div class="col-8">
+            {{#each addedH }}
+                <div class="card">
+                    <div class="card-title">
+                        <h3 class="text-danger">NAME: {{name}}</h3>
+                        <div class="card-body">
+                            <p class="text-white">AGE: {{age}}</p>
+                            <p class="text-white">POWER: {{specialPower}}</p>
+                            <p class="text-white">WEAKNESS: {{weakness}}</p>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{/partial}}
+
+{{>layout.hbs}}

@@ -9,7 +9,16 @@ import java.util.Map;
 import static spark.Spark.*;
 
 public class App {
+
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
     public static void main(String[] args) { //type “psvm + tab” to autocreate this
+        port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
         //get: index route which is base route
@@ -25,6 +34,13 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
+        get("/heroes", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("addedH", Hero.addedHeroes());
+            return new ModelAndView(model, "allhero.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
         //post route after its created
         post("/success", (request, response) -> {
             String name = request.queryParams("name");
@@ -37,6 +53,8 @@ public class App {
             model.put("squad", squad);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
+
+
 
         get("/newform", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
