@@ -14,7 +14,7 @@ Run `Gradle run` for a dev environment. The app will automatically reload if you
 Build on Gradle and jUnit5 for test.
 
 ## Demo
-![](public/images/see.png)
+![](images/see.png)
 
 ## Running unit tests
 
