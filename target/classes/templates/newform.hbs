@@ -1,0 +1,26 @@
+{{#partial "start"}}
+    <div class="row" style="background-image: url('images/wp2851020-marvel-heroes-hd-wallpaper.jpg'); background-size:cover;background-repeat:no-repeat;">
+        <h3 class="text-center text-primary" >YOUR SQUADS !!</h3>
+        {{#if "squads"}}
+        <div class="col-4">
+            {{#each squads}}
+                <div class="card">
+                   <div class="card-title">
+                       <h4 >{{name}}</h4>
+                   </div>
+                    <div class="card-body">
+                        <li class="text-white">YOUR CAUSE: {{cause}}</li>
+                        <li class="text-white">MEMBERS: {{size}}</li>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        {{/if}}
+        <div class="section">
+            <a class="btn btn-success" href="/form">ADD SQUAD</a>
+        </div>
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}
