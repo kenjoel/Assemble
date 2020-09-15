@@ -3,7 +3,7 @@
 This project was generated with [OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.8+10)
 ]() version 11.0.8.
 ---
-The project entails encryption of strings by shifting characters a specified number of times to the left or the right. This can still be deciphered back to the original state.
+Here is a mini project that allows users to have a squad of their desired Heroes. They can create a Hero, see already existing Heroes and or make their own.
 
 ## Development server
 
@@ -14,7 +14,7 @@ Run `Gradle run` for a dev environment. The app will automatically reload if you
 Build on Gradle and jUnit5 for test.
 
 ## Demo
-![](images/see.png)
+![](src/main/resources/public/images/see.png)
 
 ## Running unit tests
 
